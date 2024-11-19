@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* This part goes in your global CSS file (e.g., styles.css) */
+@keyframes spin-border {
+    0% {
+      border-color: transparent;
+      transform: rotate(0deg);
+    }
+    100% {
+      border-color: #f87171; /* Tailwind's red-500 color */
+      transform: rotate(360deg);
+    }
+  }
+  
+  .hover\:spin-border:hover {
+    animation: spin-border 1s forwards;
+  }
+  
+
